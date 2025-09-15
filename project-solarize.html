@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solarize ERP — Alottt</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    
+    <!-- External Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+    <!-- Particle Canvas -->
+    <canvas id="particles-canvas"></canvas>
+    
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="/" class="logo">
+                    <img src="/assets/logos/Alottt-logo.png" alt="Alottt" />
+                </a>
+                
+                <nav class="nav" id="nav">
+                    <a href="/" class="nav-link">Home</a>
+                    <a href="/services.html" class="nav-link">Services</a>
+                    <a href="/projects.html" class="nav-link">Projects</a>
+                    <a href="/about.html" class="nav-link">About</a>
+                    <a href="/contact.html" class="nav-link">Contact</a>
+                </nav>
+                
+                <div class="header-actions">
+                    <a href="/contact.html" class="btn btn-primary magnetic">Start a Project</a>
+                    <button class="mobile-toggle" id="mobile-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Project Hero -->
+        <section class="project-hero">
+            <div class="project-hero-image">
+                <img src="/assets/images/solarize-cover.jpg" alt="Solarize ERP">
+            </div>
+            
+            <div class="container">
+                <div class="project-hero-content">
+                    <div class="project-breadcrumb">
+                        <a href="/projects.html">Projects</a>
+                        <span>/</span>
+                        <span>Solarize ERP</span>
+                    </div>
+                    
+                    <h1 class="project-title">Solarize ERP</h1>
+                    <p class="project-subtitle">Complete ERP solution for solar pump vendors supporting government initiatives</p>
+                    
+                    <div class="project-meta">
+                        <div class="project-meta-item">
+                            <span class="meta-label">Client</span>
+                            <span class="meta-value">Solarize India</span>
+                        </div>
+                        <div class="project-meta-item">
+                            <span class="meta-label">Year</span>
+                            <span class="meta-value">2024</span>
+                        </div>
+                        <div class="project-meta-item">
+                            <span class="meta-label">Services</span>
+                            <span class="meta-value">ERP Development, UI/UX</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Overview -->
+        <section class="project-section">
+            <div class="container">
+                <div class="project-content">
+                    <div class="section-header">
+                        <h2>Overview</h2>
+                    </div>
+                    
+                    <div class="content-grid">
+                        <div class="content-main">
+                            <p class="lead">Solarize ERP is a comprehensive enterprise resource planning solution designed specifically for solar pump vendors operating within India's renewable energy initiatives.</p>
+                            
+                            <p>The system streamlines operations for vendors participating in government schemes like PM-KUSUM (Pradhan Mantri Kisan Urja Suraksha evam Utthaan Mahabhiyan) and Surya Ghar, providing end-to-end management from lead generation to installation and support.</p>
+                            
+                            <p>Built with modern web technologies, the platform handles complex workflows including subsidy management, vendor onboarding, inventory tracking, and customer relationship management while maintaining compliance with government regulations.</p>
+                        </div>
+                        
+                        <div class="content-sidebar">
+                            <div class="project-stats">
+                                <div class="stat-item">
+                                    <div class="stat-number">500+</div>
+                                    <div class="stat-label">Vendors Onboarded</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">10K+</div>
+                                    <div class="stat-label">Pumps Managed</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">50+</div>
+                                    <div class="stat-label">Districts Covered</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Goals -->
+        <section class="project-section bg-light">
+            <div class="container">
+                <div class="project-content">
+                    <div class="section-header">
+                        <h2>Goals & Challenges</h2>
+                    </div>
+                    
+                    <div class="goals-grid">
+                        <div class="goal-item">
+                            <div class="goal-icon">
+                                <i class="ri-target-line"></i>
+                            </div>
+                            <h3>Streamline Operations</h3>
+                            <p>Unify vendor management, inventory tracking, and customer relationships in a single platform.</p>
+                        </div>
+                        
+                        <div class="goal-item">
+                            <div class="goal-icon">
+                                <i class="ri-government-line"></i>
+                            </div>
+                            <h3>Government Compliance</h3>
+                            <p>Ensure full compliance with PM-KUSUM and Surya Ghar scheme requirements and documentation.</p>
+                        </div>
+                        
+                        <div class="goal-item">
+                            <div class="goal-icon">
+                                <i class="ri-speed-up-line"></i>
+                            </div>
+                            <h3>Improve Efficiency</h3>
+                            <p>Reduce manual processes and paperwork to accelerate project delivery timelines.</p>
+                        </div>
+                        
+                        <div class="goal-item">
+                            <div class="goal-icon">
+                                <i class="ri-bar-chart-line"></i>
+                            </div>
+                            <h3>Data-Driven Insights</h3>
+                            <p>Provide comprehensive analytics and reporting for better business decision making.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- System Modules -->
+        <section class="project-section">
+            <div class="container">
+                <div class="project-content">
+                    <div class="section-header">
+                        <h2>System Modules</h2>
+                        <p>Comprehensive modules designed for end-to-end solar pump business management.</p>
+                    </div>
+                    
+                    <div class="modules-grid">
+                        <div class="module-card">
+                            <div class="module-header">
+                                <i class="ri-user-add-line"></i>
+                                <h3>Onboarding</h3>
+                            </div>
+                            <p>Streamlined vendor registration, document verification, and compliance checks for government scheme participation.</p>
+                            <ul class="module-features">
+                                <li>Vendor registration & KYC</li>
+                                <li>Document management</li>
+                                <li>Compliance verification</li>
+                                <li>Approval workflows</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="module-card">
+                            <div class="module-header">
+                                <i class="ri-truck-line"></i>
+                                <h3>Dispatch</h3>
+                            </div>
+                            <p>Efficient order processing, inventory management, and logistics coordination for pump deliveries.</p>
+                            <ul class="module-features">
+                                <li>Order management</li>
+                                <li>Inventory tracking</li>
+                                <li>Logistics coordination</li>
+                                <li>Delivery scheduling</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="module-card">
+                            <div class="module-header">
+                                <i class="ri-tools-line"></i>
+                                <h3>Install</h3>
+                            </div>
+                            <p>Installation scheduling, technician management, and quality assurance for pump installations.</p>
+                            <ul class="module-features">
+                                <li>Installation scheduling</li>
+                                <li>Technician assignment</li>
+                                <li>Quality checklists</li>
+                                <li>Completion tracking</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="module-card">
+                            <div class="module-header">
+                                <i class="ri-customer-service-2-line"></i>
+                                <h3>Support</h3>
+                            </div>
+                            <p>Comprehensive after-sales support, maintenance scheduling, and customer service management.</p>
+                            <ul class="module-features">
+                                <li>Ticket management</li>
+                                <li>Maintenance scheduling</li>
+                                <li>Service history</li>
+                                <li>Customer communication</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Results -->
+        <section class="project-section bg-light">
+            <div class="container">
+                <div class="project-content">
+                    <div class="section-header">
+                        <h2>Results & Impact</h2>
+                    </div>
+                    
+                    <div class="results-grid">
+                        <div class="result-item">
+                            <div class="result-number">60%</div>
+                            <div class="result-label">Faster Processing</div>
+                            <div class="result-description">Reduced application processing time from weeks to days</div>
+                        </div>
+                        
+                        <div class="result-item">
+                            <div class="result-number">40%</div>
+                            <div class="result-label">Cost Reduction</div>
+                            <div class="result-description">Lower operational costs through automation</div>
+                        </div>
+                        
+                        <div class="result-item">
+                            <div class="result-number">95%</div>
+                            <div class="result-label">Compliance Rate</div>
+                            <div class="result-description">Improved compliance with government requirements</div>
+                        </div>
+                        
+                        <div class="result-item">
+                            <div class="result-number">99.9%</div>
+                            <div class="result-label">Uptime</div>
+                            <div class="result-description">Reliable system performance and availability</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Gallery -->
+        <section class="project-gallery">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Project Gallery</h2>
+                </div>
+                
+                <div class="swiper gallery-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="/assets/images/project-gallery-1.jpg" alt="Solarize Dashboard">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/assets/images/project-gallery-2.jpg" alt="Vendor Management">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/assets/images/solarize-cover.jpg" alt="System Overview">
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Need a similar solution?</h2>
+                    <p>Let's discuss how we can build a custom ERP system for your business.</p>
+                    <a href="/contact.html" class="btn btn-primary btn-lg magnetic">Start Your Project</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-grid">
+                    <div class="footer-column">
+                        <h4>About</h4>
+                        <ul>
+                            <li><a href="/about.html">Our Story</a></li>
+                            <li><a href="/resume.html">Resume</a></li>
+                            <li><a href="/deck.html">Deck</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="/privacy.html">Privacy Policy</a></li>
+                            <li><a href="/terms.html">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="/services.html">Branding</a></li>
+                            <li><a href="/services.html">Digital</a></li>
+                            <li><a href="/services.html">Tech</a></li>
+                            <li><a href="/services.html">Marketing</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li><a href="mailto:connect@alottt.com">connect@alottt.com</a></li>
+                            <li><a href="tel:+919876543210">+91 98765 43210</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Alottt. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="back-to-top">
+        <i class="ri-arrow-up-line"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>

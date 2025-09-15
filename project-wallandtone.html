@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wall & Tone — Alottt</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    
+    <!-- External Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+    <!-- Particle Canvas -->
+    <canvas id="particles-canvas"></canvas>
+    
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="/" class="logo">
+                    <img src="/assets/logos/Alottt-logo.png" alt="Alottt" />
+                </a>
+                
+                <nav class="nav" id="nav">
+                    <a href="/" class="nav-link">Home</a>
+                    <a href="/services.html" class="nav-link">Services</a>
+                    <a href="/projects.html" class="nav-link">Projects</a>
+                    <a href="/about.html" class="nav-link">About</a>
+                    <a href="/contact.html" class="nav-link">Contact</a>
+                </nav>
+                
+                <div class="header-actions">
+                    <a href="/contact.html" class="btn btn-primary magnetic">Start a Project</a>
+                    <button class="mobile-toggle" id="mobile-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Project Hero -->
+        <section class="project-hero">
+            <div class="project-hero-image">
+                <img src="/assets/images/wallandtone-cover.jpg" alt="Wall & Tone">
+            </div>
+            
+            <div class="container">
+                <div class="project-hero-content">
+                    <div class="project-breadcrumb">
+                        <a href="/projects.html">Projects</a>
+                        <span>/</span>
+                        <span>Wall & Tone</span>
+                    </div>
+                    
+                    <h1 class="project-title">Wall & Tone</h1>
+                    <p class="project-subtitle">AI-powered wall art marketplace connecting artists with customers</p>
+                    
+                    <div class="project-meta">
+                        <div class="project-meta-item">
+                            <span class="meta-label">Client</span>
+                            <span class="meta-value">Wall & Tone</span>
+                        </div>
+                        <div class="project-meta-item">
+                            <span class="meta-label">Year</span>
+                            <span class="meta-value">2024</span>
+                        </div>
+                        <div class="project-meta-item">
+                            <span class="meta-label">Services</span>
+                            <span class="meta-value">E-commerce, AI Integration</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Overview -->
+        <section class="project-section">
+            <div class="container">
+                <div class="project-content">
+                    <div class="section-header">
+                        <h2>Overview</h2>
+                    </div>
+                    
+                    <div class="content-grid">
+                        <div class="content-main">
+                            <p class="lead">Wall & Tone is an innovative AI-powered marketplace that revolutionizes how people discover and purchase wall art by connecting talented artists directly with customers through intelligent curation.</p>
+                            
+                            <p>The platform leverages machine learning algorithms to understand customer preferences and style choices, providing personalized art recommendations while offering artists a seamless onboarding process and powerful tools to showcase their work.</p>
+                            
+                            <p>Built with modern e-commerce architecture, the platform integrates advanced features including AI-driven product recommendations, automated artist verification, custom framing options, and seamless payment processing.</p>
+                        </div>
+                        
+                        <div class="content-sidebar">
+                            <div class="project-stats">
+                                <div class="stat-item">
+                                    <div class="stat-number">1000+</div>
+                                    <div class="stat-label">Artists Onboarded</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">15K+</div>
+                                    <div class="stat-label">Artworks Listed</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">5K+</div>
+                                    <div class="stat-label">Happy Customers</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI Workflows -->
+        <section class="project-section bg-light">
+            <div class="container">
+                <div class="project-content">
+                    <div class="section-header">
+                        <h2>AI-Powered Workflows</h2>
+                        <p>Intelligent systems that enhance both artist and customer experiences.</p>
+                    </div>
+                    
+                    <div class="workflow-grid">
+                        <div class="workflow-item">
+                            <div class="workflow-icon">
+                                <i class="ri-brain-line"></i>
+                            </div>
+                            <h3>Smart Recommendations</h3>
+                            <p>Machine learning algorithms analyze customer browsing behavior, purchase history, and style preferences to suggest personalized artwork recommendations.</p>
+                        </div>
+                        
+                        <div class="workflow-item">
+                            <div class="workflow-icon">
+                                <i class="ri-image-line"></i>
+                            </div>
+                            <h3>Automatic Categorization</h3>
+                            <p>AI-powered image recognition automatically categorizes artwork by style, color palette, theme, and subject matter for improved discoverability.</p>
+                        </div>
+                        
+                        <div class="workflow-item">
+                            <div class="workflow-icon">
+                                <i class="ri-palette-line"></i>
+                            </div>
+                            <h3>Style Matching</h3>
+                            <p>Advanced algorithms match customer room photos with suitable artwork based on color harmony, style compatibility, and spatial requirements.</p>
+                        </div>
+                        
+                        <div class="workflow-item">
+                            <div class="workflow-icon">
+                                <i class="ri-price-tag-line"></i>
+                            </div>
+                            <h3>Dynamic Pricing</h3>
+                            <p>AI-driven pricing suggestions help artists optimize their pricing strategy based on market trends, artwork characteristics, and demand patterns.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Artist Marketplace -->
+        <section class="project-section">
+            <div class="container">
+                <div class="project-content">
+                    <div class="section-header">
+                        <h2>Artist Marketplace Features</h2>
+                    </div>
+                    
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-header">
+                                <i class="ri-user-add-line"></i>
+                                <h3>Streamlined Onboarding</h3>
+                            </div>
+                            <p>Simple registration process with portfolio upload, identity verification, and artist profile creation tools.</p>
+                            <ul class="feature-list">
+                                <li>Portfolio submission</li>
+                                <li>Identity verification</li>
+                                <li>Artist profile builder</li>
+                                <li>Commission structure setup</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="feature-card">
+                            <div class="feature-header">
+                                <i class="ri-dashboard-line"></i>
+                                <h3>Artist Dashboard</h3>
+                            </div>
+                            <p>Comprehensive analytics and management tools for artists to track sales, manage inventory, and optimize listings.</p>
+                            <ul class="feature-list">
+                                <li>Sales analytics</li>
+                                <li>Inventory management</li>
+                                <li>Order tracking</li>
+                                <li>Performance insights</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="feature-card">
+                            <div class="feature-header">
+                                <i class="ri-money-dollar-circle-line"></i>
+                                <h3>Revenue Management</h3>
+                            </div>
+                            <p>Transparent payment system with automated royalty distribution and detailed financial reporting.</p>
+                            <ul class="feature-list">
+                                <li>Automated payments</li>
+                                <li>Revenue tracking</li>
+                                <li>Tax documentation</li>
+                                <li>Commission transparency</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Custom Frames -->
+        <section class="project-section bg-light">
+            <div class="container">
+                <div class="project-content">
+                    <div class="section-header">
+                        <h2>Custom Framing Solutions</h2>
+                    </div>
+                    
+                    <div class="framing-content">
+                        <div class="framing-text">
+                            <p class="lead">Professional framing service that transforms artwork into ready-to-hang masterpieces.</p>
+                            
+                            <div class="framing-features">
+                                <div class="framing-feature">
+                                    <i class="ri-ruler-line"></i>
+                                    <div>
+                                        <h4>Custom Sizing</h4>
+                                        <p>Precise measurements and custom sizing options for perfect fit in any space.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="framing-feature">
+                                    <i class="ri-palette-line"></i>
+                                    <div>
+                                        <h4>Material Selection</h4>
+                                        <p>Premium frame materials including wood, metal, and specialty finishes to match any décor.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="framing-feature">
+                                    <i class="ri-shield-check-line"></i>
+                                    <div>
+                                        <h4>Protection Options</h4>
+                                        <p>UV-protective glass and archival matting to preserve artwork quality over time.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Stack -->
+        <section class="project-section">
+            <div class="container">
+                <div class="project-content">
+                    <div class="section-header">
+                        <h2>Technology Stack</h2>
+                        <p>Robust infrastructure powering the marketplace experience.</p>
+                    </div>
+                    
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <div class="tech-logo">
+                                <i class="ri-cloud-line"></i>
+                            </div>
+                            <h3>Cloudinary</h3>
+                            <p>Advanced image management, optimization, and transformation for high-quality artwork display.</p>
+                        </div>
+                        
+                        <div class="tech-item">
+                            <div class="tech-logo">
+                                <i class="ri-wallet-line"></i>
+                            </div>
+                            <h3>Razorpay</h3>
+                            <p>Secure payment processing with multiple payment options and automated seller payouts.</p>
+                        </div>
+                        
+                        <div class="tech-item">
+                            <div class="tech-logo">
+                                <i class="ri-truck-line"></i>
+                            </div>
+                            <h3>Shiprocket</h3>
+                            <p>Comprehensive logistics solution for nationwide artwork delivery and tracking.</p>
+                        </div>
+                        
+                        <div class="tech-item">
+                            <div class="tech-logo">
+                                <i class="ri-robot-line"></i>
+                            </div>
+                            <h3>AI/ML APIs</h3>
+                            <p>Custom machine learning models for recommendations, categorization, and personalization.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Gallery -->
+        <section class="project-gallery">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Project Gallery</h2>
+                </div>
+                
+                <div class="swiper gallery-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="/assets/images/wallandtone-cover.jpg" alt="Wall & Tone Homepage">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/assets/images/project-gallery-1.jpg" alt="Artist Dashboard">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/assets/images/project-gallery-2.jpg" alt="Product Catalog">
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to build your marketplace?</h2>
+                    <p>Let's create an AI-powered platform that connects your community.</p>
+                    <a href="/contact.html" class="btn btn-primary btn-lg magnetic">Start Your Project</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-grid">
+                    <div class="footer-column">
+                        <h4>About</h4>
+                        <ul>
+                            <li><a href="/about.html">Our Story</a></li>
+                            <li><a href="/resume.html">Resume</a></li>
+                            <li><a href="/deck.html">Deck</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="/privacy.html">Privacy Policy</a></li>
+                            <li><a href="/terms.html">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="/services.html">Branding</a></li>
+                            <li><a href="/services.html">Digital</a></li>
+                            <li><a href="/services.html">Tech</a></li>
+                            <li><a href="/services.html">Marketing</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li><a href="mailto:connect@alottt.com">connect@alottt.com</a></li>
+                            <li><a href="tel:+919876543210">+91 98765 43210</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Alottt. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="back-to-top">
+        <i class="ri-arrow-up-line"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>

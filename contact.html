@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — Alottt</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    
+    <!-- External Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+    <!-- Particle Canvas -->
+    <canvas id="particles-canvas"></canvas>
+    
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="/" class="logo">
+                    <img src="/assets/logos/Alottt-logo.png" alt="Alottt" />
+                </a>
+                
+                <nav class="nav" id="nav">
+                    <a href="/" class="nav-link">Home</a>
+                    <a href="/services.html" class="nav-link">Services</a>
+                    <a href="/projects.html" class="nav-link">Projects</a>
+                    <a href="/about.html" class="nav-link">About</a>
+                    <a href="/contact.html" class="nav-link active">Contact</a>
+                </nav>
+                
+                <div class="header-actions">
+                    <a href="/contact.html" class="btn btn-primary magnetic">Start a Project</a>
+                    <button class="mobile-toggle" id="mobile-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="page-hero">
+            <div class="container">
+                <div class="page-hero-content">
+                    <h1 class="page-title">Let's Talk</h1>
+                    <p class="page-subtitle">
+                        Share your goals & constraints—we align on outcomes within 24 hours.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Contact Form -->
+                    <div class="contact-form-wrapper">
+                        <div class="section-header">
+                            <h2>Start Your Project</h2>
+                            <p>Tell us about your project and we'll get back to you within 24 hours.</p>
+                        </div>
+                        
+                        <form class="contact-form" id="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Name *</label>
+                                    <input type="text" id="name" name="name" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email">Email *</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="phone">Phone</label>
+                                    <input type="tel" id="phone" name="phone">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="company">Company</label>
+                                    <input type="text" id="company" name="company">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="service">Service Interest</label>
+                                <select id="service" name="service">
+                                    <option value="">Select a service</option>
+                                    <option value="branding">Branding & Strategy</option>
+                                    <option value="digital">Digital Experiences</option>
+                                    <option value="tech">Tech Support</option>
+                                    <option value="marketing">Digital Marketing</option>
+                                    <option value="custom">Custom Solution</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="budget">Budget Range</label>
+                                <select id="budget" name="budget">
+                                    <option value="">Select budget range</option>
+                                    <option value="5k-15k">$5,000 - $15,000</option>
+                                    <option value="15k-50k">$15,000 - $50,000</option>
+                                    <option value="50k-100k">$50,000 - $100,000</option>
+                                    <option value="100k+">$100,000+</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Project Details *</label>
+                                <textarea id="message" name="message" rows="5" required placeholder="Tell us about your project, goals, timeline, and any specific requirements..."></textarea>
+                            </div>
+                            
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="privacy" name="privacy" required>
+                                    <span class="checkmark"></span>
+                                    I agree to the <a href="/privacy.html" target="_blank">Privacy Policy</a> and consent to being contacted about my project.
+                                </label>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-lg magnetic form-submit">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                    
+                    <!-- Contact Info -->
+                    <div class="contact-info">
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="ri-mail-line"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Email</h3>
+                                <a href="mailto:connect@alottt.com">connect@alottt.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="ri-phone-line"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Phone</h3>
+                                <a href="tel:+919876543210">+91 98765 43210</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="ri-time-line"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Response Time</h3>
+                                <span>Within 24 hours</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="ri-map-pin-line"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Location</h3>
+                                <span>India (Remote)</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Map Placeholder -->
+                        <div class="map-placeholder">
+                            <div class="map-content">
+                                <i class="ri-map-line"></i>
+                                <p>We work remotely with clients worldwide</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section bg-light" id="faq">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <p class="section-subtitle">
+                        Common questions about working with us.
+                    </p>
+                </div>
+                
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3>What's your typical project timeline?</h3>
+                        <p>Project timelines vary based on scope and complexity. Simple websites typically take 2-4 weeks, while complex applications can take 2-6 months. We'll provide a detailed timeline during our initial consultation.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3>Do you work with clients internationally?</h3>
+                        <p>Absolutely! We work with clients worldwide. Our remote-first approach means we can collaborate effectively across different time zones and locations.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3>What's included in your ongoing support?</h3>
+                        <p>We provide ongoing technical support, security updates, performance monitoring, and content updates. Support packages are customized based on your specific needs.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3>Can you help with existing projects?</h3>
+                        <p>Yes! We can audit, optimize, or extend existing projects. Whether you need bug fixes, feature additions, or complete redesigns, we're here to help.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-grid">
+                    <div class="footer-column">
+                        <h4>About</h4>
+                        <ul>
+                            <li><a href="/about.html">Our Story</a></li>
+                            <li><a href="/resume.html">Resume</a></li>
+                            <li><a href="/deck.html">Deck</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="/privacy.html">Privacy Policy</a></li>
+                            <li><a href="/terms.html">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="/services.html">Branding</a></li>
+                            <li><a href="/services.html">Digital</a></li>
+                            <li><a href="/services.html">Tech</a></li>
+                            <li><a href="/services.html">Marketing</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li><a href="mailto:connect@alottt.com">connect@alottt.com</a></li>
+                            <li><a href="tel:+919876543210">+91 98765 43210</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Alottt. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="back-to-top">
+        <i class="ri-arrow-up-line"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="/assets/js/main.js"></script>
+    <script>
+        // Contact form handling
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const data = {};
+            
+            for (let [key, value] of formData.entries()) {
+                data[key] = value;
+            }
+            
+            // Create mailto link with form data
+            const subject = encodeURIComponent(`New Project Inquiry from ${data.name}`);
+            const body = encodeURIComponent(`
+Name: ${data.name}
+Email: ${data.email}
+Phone: ${data.phone || 'Not provided'}
+Company: ${data.company || 'Not provided'}
+Service Interest: ${data.service || 'Not specified'}
+Budget Range: ${data.budget || 'Not specified'}
+
+Project Details:
+${data.message}
+
+---
+This inquiry was submitted through the Alottt website contact form.
+            `);
+            
+            const mailtoLink = `mailto:connect@alottt.com?subject=${subject}&body=${body}`;
+            window.location.href = mailtoLink;
+            
+            // Show confirmation message
+            alert('Thank you for your inquiry! Your default email client should open with the message. If it doesn\'t, please email us directly at connect@alottt.com');
+            
+            // Reset form
+            this.reset();
+        });
+    </script>
+</body>
+</html>
